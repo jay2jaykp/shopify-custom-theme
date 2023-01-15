@@ -1,17 +1,16 @@
 module.exports = {
-    content: [
-      './layout/*.liquid',
-      './templates/*.liquid',
-      './sections/*.liquid',
-      './snippets/*.liquid'
-    ],
+  content: [
+    "./layout/*.liquid",
+    "./templates/*.liquid",
+    "./sections/*.liquid",
+    "./snippets/*.liquid",
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {}
+    extend: {},
   },
   variants: {
-    extend: {}
+    extend: {},
   },
-  plugins: [
-  ]
-}
+  plugins: [],
+};

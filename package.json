@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "watch 'npx tailwindcss build css/application.css -o assets/application.css.liquid' ."
+    "dev": "npx tailwindcss build -i ./css/application.css -o ./assets/application.css.liquid --watch"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

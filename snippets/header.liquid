@@ -1,8 +1,10 @@
 <header class="bg-black text-white flex justify-between items-center">
-  <h1 class="p-3 ">{{ shop.name }}</h1>
+  <h1 class="p-3 text-blue-500">{{ shop.name }}</h1>
   <div class="flex gap-3">
-    {% for link in linklists.main-menu.links -%}
-      <a class="hover:text-red-500 {% if link.active %} text-red-500 {% endif %}" href="{{ link.url }}">{{ link.title }}</a>
+    {% for link in linklists['main-menu'].links -%}
+      <a class="hover:text-blue-500 {% if link.active %} text-blue-500 {% endif %}" href="{{ link.url }}">
+        {{- link.title -}}
+      </a>
     {%- endfor %}
   </div>
   <div>
